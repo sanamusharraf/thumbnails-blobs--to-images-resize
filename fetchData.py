@@ -14,7 +14,7 @@ my_database.execute(sql_statement)
 output = my_database.fetchall()
 
 Thisfolder = os.path.dirname(os.path.abspath(__file__))
-folder = os.path.join(Thisfolder , "internship/pictures")
+folder = os.path.join(Thisfolder , "pictures")
 for x in output:
   name = str(x[0])
   picture = os.path.join(folder, "{names}.png".format(names=name))
